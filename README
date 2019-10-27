@@ -1,0 +1,14 @@
+# Deutsch-Jozsa Algorithm Demonstration
+
+These scripts were written at CalHacks 6. They use PyQuil to simulate the execution of the Deutsch-Jozsa algorithm.
+
+`deutsch.py` and `deutsch_jozsa.py` are the implementations for Deutsch's original simplified algorithm, and the more
+general n-qubit case, respectively. In both files, the function can be modified by changing the `Uf` array passed into
+the algorithm. This array is built into the quantum circuit, and the results of the balance measurement are visible in
+the first register upon measurement.
+
+## Setup notes
+
+All requirements are documented in requirements.txt. On Windows, both `pyquil` and `numpy` require the 2015 Visual
+C++ compiler to be installed. The installation command should be run from a command prompt where these executables
+are accessible.
